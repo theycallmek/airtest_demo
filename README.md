@@ -3,10 +3,13 @@ A short demo showing the power of airtest api and poco using cookie clicker as t
 I used Bluestacks 5.8.0.1079 N64 for testing but I believe any android device will work.
 
 Required Packages:
-airtest
-pocoui
+
+airtest - https://airtest.readthedocs.io/en/latest/index.html
+
+pocoui - https://poco.readthedocs.io/en/latest/index.html
 
 Usage:
+
 - Open Chrome on the Android devices
 - Navigate to https://iogames.onl/cookie-clicker
 - Scroll down enough to be able to see the big cookie
@@ -15,10 +18,3 @@ Usage:
 - Watch cookies get clicked
 
 It will work in the background or minimized and the device resolution doesnt matter :)
-
-Game at:
-https://iogames.onl/cookie-clicker
-
-References:
-Airtest API - https://airtest.readthedocs.io/en/latest/index.html
-Poco API - https://poco.readthedocs.io/en/latest/index.html
