@@ -18,3 +18,7 @@ It will work in the background or minimized and the device resolution doesnt mat
 
 Game at:
 https://iogames.onl/cookie-clicker
+
+References:
+Airtest API - https://airtest.readthedocs.io/en/latest/index.html
+Poco API - https://poco.readthedocs.io/en/latest/index.html
