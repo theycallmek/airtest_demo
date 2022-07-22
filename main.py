@@ -2,16 +2,16 @@ from airtest.core.api import *
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 import time
 
-# Init poco and start our execution time clock.
-poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 total_t0 = time.time()
 
 # Connect to first device listed from 'adb devices'. Specify a device if you want just check the docs.
 try:
+    poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
     auto_setup(__file__, logdir=False,
                devices=[f'Android:///?cap_method=javacap&touch_method=adb', ])
 except IndexError:
     print('Could not connect to device.')
+    quit()
 
 
 # Using this freeze function allows you to snapshot the UI Hierarchy and store it locally.
