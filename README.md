@@ -9,7 +9,7 @@ airtest - https://airtest.readthedocs.io/en/latest/index.html
 pocoui - https://poco.readthedocs.io/en/latest/index.html
 
 Usage:
-
+- Open a cmd prompt and make sure you see your device listed when entering the command 'adb devices'. You can 'adb kill-server' then 'adb start-server' if you dont see your device.
 - Open Chrome on the Android devices
 - Navigate to https://iogames.onl/cookie-clicker
 - Scroll down enough to be able to see the big cookie
