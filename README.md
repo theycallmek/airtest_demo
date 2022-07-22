@@ -9,12 +9,12 @@ airtest - https://airtest.readthedocs.io/en/latest/index.html
 pocoui - https://poco.readthedocs.io/en/latest/index.html
 
 Usage:
+- Make sure the device is connected over USB and USB debugging is enabled under developer options.
 - Open a cmd prompt and make sure you see your device listed when entering the command 'adb devices'. You can 'adb kill-server' then 'adb start-server' if you dont see your device.
-- Open Chrome on the Android device
-- Navigate to https://iogames.onl/cookie-clicker
-- Scroll down enough to be able to see the big cookie
-- Make sure the device is connected over USB
-- Run main.py
-- Watch cookies get clicked
+- Open Chrome on the Android device.
+- Navigate to https://iogames.onl/cookie-clicker.
+- Scroll down enough to be able to see the big cookie.
+- Run main.py.
+- Watch cookies get clicked.
 
 It will work in the background or minimized and the device resolution doesnt matter :)
