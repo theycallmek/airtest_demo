@@ -10,7 +10,7 @@ pocoui - https://poco.readthedocs.io/en/latest/index.html
 
 Usage:
 - Open a cmd prompt and make sure you see your device listed when entering the command 'adb devices'. You can 'adb kill-server' then 'adb start-server' if you dont see your device.
-- Open Chrome on the Android devices
+- Open Chrome on the Android device
 - Navigate to https://iogames.onl/cookie-clicker
 - Scroll down enough to be able to see the big cookie
 - Make sure the device is connected over USB
