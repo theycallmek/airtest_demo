@@ -19,19 +19,23 @@ except IndexError:
 # data over adb after every click. It's about a 10x speed increase. If the screen changes you obviously
 # would need to refreeze. That's why the first click takes so much longer to execute.
 with poco.freeze() as frozen_poco:
-    for item in frozen_poco("cookieAnchor"):
 
-        # Click our match 10 times.
+    # Create an instance of the frozen_poco class.
+    cookie = frozen_poco("cookieAnchor")
+
+    if cookie.exists():
+
+        # If the cookie exists, click it 10 times.
         for i in range(10):
             i_loop_t0 = time.time()
-            item.click()
+            cookie.click()
             i_loop_t1 = time.time()
 
-            # Print times clicked and time to click
-            print(f'{item} clicked {i} amount of times')
+            # Print times clicked and time to click.
+            print(f'Cookie clicked {i} amount of times')
             print(f'Time to click: {i_loop_t1 - i_loop_t0}')
 
-# Print total execution time
+# Print total execution time.
 total_t1 = time.time()
 print(f'DONE!\nTotal time to execute: {total_t1 - total_t0}')
 print(f'Clicks/second = {(total_t1 - total_t0) / 10}')
